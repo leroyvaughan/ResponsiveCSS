@@ -1,0 +1,140 @@
+@import 'mixins';
+
+$colColor1: #ccc;
+$colColor2: #777;
+$colColor3: #ccc;
+
+html{ height:100%; }
+
+body {
+    background-color: #000;
+    padding:0;
+    margin:0;
+    height:100%;
+    font-size:14px;
+}
+
+#cssViewPort{
+    left:-1600px;
+    position:absolute;
+    top:-1000px;
+    z-index:100;
+}
+#content{
+    height:100%;
+
+    h1{ margin:0 0 10px; }
+    h2{ 
+        color:#434343;
+        margin:10px 0 5px;
+    }
+
+    .innerWrap{
+        padding:10px;
+    }
+}
+
+#col1, #col2, #col3{
+    color:#fff;
+    display:inline-block;
+    float:left;
+    height:100%;
+}
+#col1{
+    background-color:#000;
+    text-align:center;
+    width:30%;
+    
+    .innerWrap{
+        padding-top:15px;
+    }
+    #menuBtn{
+        @include setBorder(2px solid #ccc, 12px 12px 0 0);
+        background-color:#cc7735;
+        border-width:2px 2px 0;
+        color:#000;
+        font-weight:bold;
+        margin:0 auto;
+        padding:2px 4px;
+    }
+
+    #navWrap{
+        @include setBorder(3px solid #ccc, 12px);
+        @include dropShadow(#333);
+        background-color:#000;
+        display:inline-block;
+        margin:0 auto;
+        padding:5% 15%;
+
+
+        ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+
+            li{
+                font-size:17px;
+                padding:2px 0;
+
+                a, a:link, a:visited{
+                    color:#F0D66F;
+
+                    &:hover{
+                        color:#ccc;
+                        text-decoration:none;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+#col2{
+    background-color:#fff;
+    color:#111;
+    width:50%;
+
+    ul{
+        margin:0 0 10px 15px;
+        padding:0;
+
+        li{
+            margin:0 0 5px;
+
+            span{
+                color:#19645e;
+                font-weight:bold;
+            }
+        }
+    }
+}
+
+#col3{
+    background-color:#ccc;
+    text-align:center;
+    width:19.5%;
+
+    img{
+        display:block;
+        margin:0 auto;
+    }
+    span{
+        display:none;
+        font-size:30px;
+    }
+
+    $brdr: 5px 5px 2px 2px;
+    #img1{
+        border:1px solid #949184;
+        border-width:2px 3px 10px;
+        
+        -moz-border-radius:$brdr;
+        -webkit-border-radius:$brdr;
+        border-radius:$brdr;
+    }
+}
+#hiddenContent{
+    display:none;
+}
+

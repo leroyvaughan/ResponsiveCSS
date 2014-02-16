@@ -1,0 +1,108 @@
+﻿#content {
+    border: 1px solid red;
+}
+
+@media only screen and (min-width:1025px)
+{
+    
+    #content{ border-color:blue; }
+
+
+}
+
+@media only screen and (max-width:1400px){/* cyan */
+    #content{ border-color:cyan; }
+
+}
+
+
+
+/*
+###########     PURPLE:  MAX @ 1210px
+*/
+@media only screen and (max-width:1210px){
+    #content{ border-color:PURPLE; }
+}
+
+
+
+/*
+###########     TAN:  MAX @ 1070px
+*/
+@media only screen and (max-width:1070px){
+    #content{ border-color:TAN; }
+}
+
+
+/*
+###########     RED:  MAX @ 950px
+*/
+@media only screen and (max-width:950px){
+    #content{ border:2px solid red }
+
+}
+
+
+/*
+###########     orange: MAX-WIDTH 910px        IPAD IPAD
+*/
+@media only screen and (max-width:910px){
+    #content{ border:2px solid orange; }
+}
+
+/*
+###########     YELLOW: MAX-WIDTH 700px
+*/
+@media only screen and (max-width:750px){
+    #content{ border-color:YELLOW; }
+
+}
+
+
+/*
+###########     lightBlue: MAX-WIDTH 655PX
+*/
+@media only screen and (max-width:665px){
+    #content{ border-color:lightBlue; }
+
+}
+
+
+/*
+###########     GREEN: MAX-WIDTH 615PX
+*/
+@media only screen and (max-width:615px){
+    #content{ border-color:lime; }
+}
+
+/* OLIVE */
+@media only screen and (max-width:490px){
+    #content{ border:2px solid olive; }
+}
+
+/* blue */
+@media only screen and (max-width:460px){
+    #content{ border-color:Blue; }
+}
+
+
+/* light pink */
+@media only screen and (max-width:400px){
+    #content{ border-color:pink; }
+}
+
+
+/*
+###########     black: MAX @ 335px
+*/
+@media only screen and (max-width:335px){
+    #content{ border-color:#000; }
+}
+
+
+
+/* red */
+@media only screen and (max-width:290px){
+    #content{ border-color:red; }
+
+}

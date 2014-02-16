@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Responsive Media Query Colors</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/mediaQueries.css" />
+
+    <!-- add/remove for Responsive Design -->
+    <link rel="stylesheet" href="css/mediaQuery_colors.css" />
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <!-- this element is used in the javascript to check what
+        max screen width is -->
+    <div id="cssViewPort"></div>
+
+    <div id="content">
+        <div id="col1" class="col">
+            <div class="innerWrap">
+                <div id="menuBtn">NAV MENU</div>
+                <div id="navWrap">
+                    <ul id="nav">
+                        <li><a href="#">link for nav item 1</a></li>
+                        <li><a href="#">link for nav item 2</a></li>
+                        <li><a href="#">link for nav item 3</a></li>
+                        <li><a href="#">link for nav item 4</a></li>
+                        <li><a href="#">link for nav item 5</a></li>
+                        <li><a href="#">link for nav item 6</a></li>
+                        <li><a href="#">link for nav item 7</a></li>
+                        <li><a href="#">link for nav item 8</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="col2" class="col">
+            <div class="innerWrap">
+                <h1>Responsive CSS Demo</h1>
+                <p>This is a demonstration page for Responsive CSS.  If you look at the page border while resizing the browser window, or on different types of clients (ie. desktop: wide, narrow, tablet, mobile), you'll notice that the it changes colors as the screen size varies.  I use this so that I know what screen size I'm dealing with when looking at page elements that are out of place on smaller screen size.  Typically I will code for the desktop environment, then scale the site down to a max-width of 290px.
+                </p>
+                <div>
+                    <h2>There are three stylesheets referenced by this page:</h2>
+                    <ul>
+                        <li><span>Styles.css:</span> the main stylesheet</li>
+                        <li><span>MediaQueries.css:</span> this is where the responsive adjustments are made in the CSS.</li>
+                        <li><span>MediaQuery_colors.css:</span> this is the one used solely for the page border color changes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="col3" class="col">
+            <div class="innerWrap">
+                <div id="imgWrap">
+                    <img id="img1" src="img/theMonkey.png" />
+                    <span id="equals">=</span>
+                    <img id="img2" src="img/theArtist.png" />
+                    <span id="plus">+</span>
+                    <img id="img3" src="img/theFlame.png" />
+                </div>
+                <div class="clear"></div>
+                <p>The flame sparks the artist which is the web monkey.</p>
+            </div>
+        </div>
+
+        <div id="hiddenContent">
+            <p>For the NAV MENU button, I modified the CSS for this particular view port size (using max-width css query).  The click handler and other associated javascript for the navigation menu can be found in the "main.js" file.  The JavaScript utilizes an html element (#cssViewPort) that is positioned off-screen.</p>
+            
+            <p>In the MediaQueries.css file, whenever a new viewport size is encountered, that particular html element has it's "left" property changed to match that of the media query max-width. This "left" property is set so that in the JavaScript when the getViewPortSize() function is called on page load and on window.resize() it can be set to a JavaScript variable.</p>
+            
+            <p>The JavaScript variable (viewPort) is utilized so that the code will know when to apply the click handler to the NAV MENU, and also when to remove it.</p>
+        </div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* two color gradient */
+html {
+  height: 100%; }
+
+body {
+  background-color: #000;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-size: 14px; }
+
+#cssViewPort {
+  left: -1600px;
+  position: absolute;
+  top: -1000px;
+  z-index: 100; }
+
+#content {
+  height: 100%; }
+  #content h1 {
+    margin: 0 0 10px; }
+  #content h2 {
+    color: #434343;
+    margin: 10px 0 5px; }
+  #content .innerWrap {
+    padding: 10px; }
+
+#col1, #col2, #col3 {
+  color: #fff;
+  display: inline-block;
+  float: left;
+  height: 100%; }
+
+#col1 {
+  background-color: #000;
+  text-align: center;
+  width: 30%; }
+  #col1 .innerWrap {
+    padding-top: 15px; }
+  #col1 #menuBtn {
+    border: 2px solid #cccccc;
+    -moz-border-radius: 12px 12px 0 0;
+    -webkit-border-radius: 12px 12px 0 0;
+    border-radius: 12px 12px 0 0;
+    behavior: url(css/PIE.htc);
+    background-color: #cc7735;
+    border-width: 2px 2px 0;
+    color: #000;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 2px 4px; }
+  #col1 #navWrap {
+    border: 3px solid #cccccc;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    behavior: url(css/PIE.htc);
+    box-shadow: -6px 7px 2px -1px #333333;
+    -moz-box-shadow: -6px 7px 2px -1px #333333;
+    -webkit-box-shadow: -6px 7px 2px -1px #333333;
+    behavior: url(css/PIE.htc);
+    background-color: #000;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5% 15%; }
+    #col1 #navWrap ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      #col1 #navWrap ul li {
+        font-size: 17px;
+        padding: 2px 0; }
+        #col1 #navWrap ul li a, #col1 #navWrap ul li a:link, #col1 #navWrap ul li a:visited {
+          color: #F0D66F; }
+          #col1 #navWrap ul li a:hover, #col1 #navWrap ul li a:link:hover, #col1 #navWrap ul li a:visited:hover {
+            color: #ccc;
+            text-decoration: none; }
+
+#col2 {
+  background-color: #fff;
+  color: #111;
+  width: 50%; }
+  #col2 ul {
+    margin: 0 0 10px 15px;
+    padding: 0; }
+    #col2 ul li {
+      margin: 0 0 5px; }
+      #col2 ul li span {
+        color: #19645e;
+        font-weight: bold; }
+
+#col3 {
+  background-color: #ccc;
+  text-align: center;
+  width: 19.5%; }
+  #col3 img {
+    display: block;
+    margin: 0 auto; }
+  #col3 span {
+    display: none;
+    font-size: 30px; }
+  #col3 #img1 {
+    border: 1px solid #949184;
+    border-width: 2px 3px 10px;
+    -moz-border-radius: 5px 5px 2px 2px;
+    -webkit-border-radius: 5px 5px 2px 2px;
+    border-radius: 5px 5px 2px 2px; }
+
+#hiddenContent {
+  display: none; }
+
